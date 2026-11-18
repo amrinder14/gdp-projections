@@ -21,3 +21,8 @@ The Settings gear in the upper right contains forecast controls, filters, export
 
 ## v3 update: trajectory country picker
 Visible country dropdown and Add economy button, removable selected-country chips, browse-all disclosure, eight-country enforcement. Update GitHub repository files then commit and push. Refresh website; installed PWA may require closing and reopening to load the new cached version.
+
+## v4 correction: restore all country data displays
+Fixed a JavaScript variable collision in the trajectory renderer that stopped the first render and left the economy selector, browse panel, and 50-country table empty. Verified in headless Chromium: 50 table rows, 50 browse buttons, dropdown population, add/remove country, and light theme.
+
+To update GitHub Pages, replace the repository-root files with this package, commit, and push. After GitHub Pages deploys, open the site in Safari while connected to the internet and reload. The service worker uses a new cache key. If the Home Screen app shows stale content, close it, reopen online, then retry.
