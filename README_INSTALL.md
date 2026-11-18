@@ -30,3 +30,7 @@ To update GitHub Pages, replace the repository-root files with this package, com
 
 ## Version 5 trajectory plotting repair
 Fixed three SVG horizontal coordinate calculations that incorrectly subtracted the global dataset array instead of the right margin. The malformed coordinates produced NaN paths and invisible trend lines. The service-worker cache version was incremented for deployment.
+
+
+## Version 6: trajectory placement and visible status
+The country picker now appears ABOVE the line chart. A live chart status counts plotted economies; the header displays `v6 · trajectory`. Verified Chromium rendering of SVG polylines and dynamic selection in a desktop/mobile viewport. After pushing, visit the GitHub Pages site in Safari first and confirm the v6 label before reopening the installed PWA.
