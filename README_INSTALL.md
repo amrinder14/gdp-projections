@@ -26,3 +26,7 @@ Visible country dropdown and Add economy button, removable selected-country chip
 Fixed a JavaScript variable collision in the trajectory renderer that stopped the first render and left the economy selector, browse panel, and 50-country table empty. Verified in headless Chromium: 50 table rows, 50 browse buttons, dropdown population, add/remove country, and light theme.
 
 To update GitHub Pages, replace the repository-root files with this package, commit, and push. After GitHub Pages deploys, open the site in Safari while connected to the internet and reload. The service worker uses a new cache key. If the Home Screen app shows stale content, close it, reopen online, then retry.
+
+
+## Version 5 trajectory plotting repair
+Fixed three SVG horizontal coordinate calculations that incorrectly subtracted the global dataset array instead of the right margin. The malformed coordinates produced NaN paths and invisible trend lines. The service-worker cache version was incremented for deployment.
