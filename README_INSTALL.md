@@ -12,3 +12,12 @@
 - User-selected controls and imported data are not preserved automatically after clearing or reloading the app; re-import source files as needed. CSV export is available.
 - Embedded 2026 nominal GDP country anchors were characterized as October 2026 IMF WEO figures in the original dashboard. Other population, TFR, PPP, growth, inflation and FX assumptions are provisional illustrative assumptions, and long-term trajectories are extrapolations, not official IMF or UN forecasts.
 - No App Store publication, device-side installation, or web hosting was performed as part of this package.
+
+
+## Version 2: appearance and settings
+
+The Settings gear in the upper right contains forecast controls, filters, exports, and data imports. Choose Light or Dark with four color schemes each. Theme preference persists on the device. Replace the existing repository files with the contents of this ZIP at the repository root, commit and push via GitHub Desktop. GitHub Pages redeploys automatically. The updated service-worker cache version ensures a refresh after deployment. If the installed iPhone icon shows an older interface, close the app completely and reopen online; if necessary remove and re-add the Home Screen icon.
+
+
+## v3 update: trajectory country picker
+Visible country dropdown and Add economy button, removable selected-country chips, browse-all disclosure, eight-country enforcement. Update GitHub repository files then commit and push. Refresh website; installed PWA may require closing and reopening to load the new cached version.
